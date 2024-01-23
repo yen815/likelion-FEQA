@@ -1,13 +1,16 @@
 // no module (without from)
 import './01-searchbar.css';
 
-// module
-// import React from "https://esm.sh/react";
-import { createRoot } from 'https://esm.sh/react-dom';
+// module (with from)
+// import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 // DOM Script === Vanilla Script
 function bodyStyling() {
-  document.body.style.backgroundColor = `#f4f6f8`;
+  document.body.style.cssText = `
+    padding: 20px;
+    background-color: #f4f6f8;
+  `;
 }
 
 bodyStyling();
@@ -84,7 +87,7 @@ const renderFormControl = () => (
 );
 
 const renderSearchBar = () => (
-  <form className="searchBar">
+  <form className="searchBar" onSubmit={(e) => e.preventDefault()}>
     <div className="searchBarGroup" role="group">
       {renderIconNaver()}
       {renderFormControl()}

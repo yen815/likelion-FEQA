@@ -3,7 +3,8 @@ import './23-contact-card.css';
 const IMAGE_URL =
   'https://raw.githubusercontent.com/yamoo9/assets/master/images/faces';
 
-function ContactCard({ name, job, email, gender, face, ext = 'jpg' }) {
+export function ContactCard({ name, job, email, gender, face, ext = 'jpg' }) {
+  // console.log(`key = ${key}`); // undefined
   return (
     <li className="ContactCardItem">
       <img
@@ -25,7 +26,7 @@ function ContactCard({ name, job, email, gender, face, ext = 'jpg' }) {
   );
 }
 
-function ContactCardList({ children }) {
+export function ContactCardList({ children }) {
   return <ul className="ContactCardList">{children}</ul>;
 }
 

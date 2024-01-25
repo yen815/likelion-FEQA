@@ -4,26 +4,16 @@ import { A11yHidden } from '../components';
 import bannerImage from '../assets/banner.png';
 import { getStaticImage } from '../utils/getStaticAsset';
 
-// 환경 변수
-// console.log(import.meta.env);
-
-// 유틸리티 함수
-function getStaticAsset(assetPath) {
-  return import.meta.env.BASE_URL + assetPath;
-}
-
-function getStaticImage(imagePath, root = 'images/') {
-  return getStaticAsset(`${root}${imagePath}`);
-}
-
 function Exercise() {
   return (
     <figure>
-      {/* public 정적 자산 */}
-      <img src={getStaticImage('faces/man-01.jpg')} alt="" />
-      {/* 마치 정적인 것처럼 src 안의 자산 */}
+      {/* ✅ public 정적 자산 */}
+      <img src={getStaticImage('faces/woman-02.jpg')} alt="" />
+
+      {/* ❌ 마치 정적인 것처럼 src 안의 자산 */}
       <img src="/src/assets/banner.png" alt="" height={100} />
-      {/* src/assets 동적 자산으로 호출(import) */}
+
+      {/* ✅ src/assets 동적 자산으로 호출(import) */}
       <img src={bannerImage} alt="" height={100} />
     </figure>
   );

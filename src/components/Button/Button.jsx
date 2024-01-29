@@ -5,7 +5,7 @@ import './Button.css';
 function Button(props) {
   let buttonLabel = props.children;
 
-  if (props.loading) {
+  if (props.loading /* undefined? */) {
     buttonLabel = '⏳ 로딩 중...';
   }
 

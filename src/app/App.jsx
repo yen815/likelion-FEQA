@@ -1,4 +1,4 @@
-import Exercise from '../lecture/29-a11y-hidden-component-v3';
+import Exercise from '../lecture/35-props-vs-states.jsx';
 import './App.css';
 
 function App() {

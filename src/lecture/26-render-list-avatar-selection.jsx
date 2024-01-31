@@ -1,4 +1,4 @@
-import Avatar from '../components/Avatar/Avatar';
+import Avatar from '@/components/Avatar/Avatar';
 import contactData from '../data/contacts.json';
 
 function Exercise() {

@@ -1,5 +1,5 @@
-import Exercise from '../lecture/35-props-vs-states.jsx';
 import './App.css';
+import Exercise from '@/lecture/37-react-form-exercise.jsx';
 
 function App() {
   return (

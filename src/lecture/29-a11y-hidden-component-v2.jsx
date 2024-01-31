@@ -1,4 +1,4 @@
-import { A11yHidden } from '../components';
+import { A11yHidden } from '@/components';
 import bannerImage from '../assets/banner.png';
 
 const bannerInfo =

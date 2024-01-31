@@ -1,9 +1,11 @@
-import './App.css';
-import Exercise from '@/lecture/37-react-form-exercise.jsx';
+import { app as appClasName } from './App.module.css';
+import Exercise from '@/lecture/36-1 lifting-state-up';
+
+console.log(appClasName);
 
 function App() {
   return (
-    <div className="app">
+    <div className={appClasName}>
       <Exercise />
     </div>
   );

@@ -1,7 +1,5 @@
 import { app as appClasName } from './App.module.css';
-import Exercise from '@/lecture/36-1 lifting-state-up';
-
-console.log(appClasName);
+import Exercise from '@/lecture/38-stack-layout-Component';
 
 function App() {
   return (

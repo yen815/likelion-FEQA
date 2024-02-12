@@ -9,7 +9,7 @@ import { createRoot } from 'react-dom/client';
 import App from '@/app/App';
 
 const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
+// const root = createRoot(rootElement);
 
 // StrictMode는 사용 목적 버그의 가능성 검토
 // 리액트 함수 컴포넌트가 순수한가?
@@ -20,8 +20,12 @@ const root = createRoot(rootElement);
 
 // 개발 → 빌드 (StrictMode는 자동 제거) → 배포
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+if (rootElement) {
+  const root = createRoot(rootElement);
+
+  root.render(
+    <StrictMode>
+      <App />
+    </StrictMode>
+  );
+}

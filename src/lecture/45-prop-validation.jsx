@@ -1,12 +1,14 @@
-import { Avatar } from '@/components';
-import Graph from '@/components/Graph/Graph';
+import { CatCardList, A11yHidden, Graph } from '@/components';
 
 function Exercise() {
   return (
     <div>
       <h2>컴포넌트 속성 타입 검사</h2>
-      <Avatar />
+      <A11yHidden>hey</A11yHidden>
+      {/* <Avatar /> */}
       <Graph />
+      <CatCardList />
+      {/* <CatCardList catList={[{ id: 'any', value: 'unknown' }]} /> */}
     </div>
   );
 }

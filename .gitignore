@@ -3,8 +3,9 @@
 .DS_Store
 .exercises
 .utils
+.next
+next-env.d.ts
+
 node_modules
 pocketbase
-NOTICE.md
-template.md
 dist

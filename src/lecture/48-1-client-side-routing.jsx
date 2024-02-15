@@ -1,5 +1,6 @@
 import { RouterProvider } from 'react-router-dom';
 import router from '@/routes';
+import { HelmetProvider } from 'react-helmet-async';
 
 // [학습 순서]
 // 1. React Router 라이브러리 소개 ✅
@@ -60,7 +61,7 @@ import router from '@/routes';
 
 function Exercise() {
   return (
-    <>
+    <HelmetProvider>
       <div className="flex flex-col space-y-1">
         <h2 className="text-2xl">클라이언트 사이드 라우팅(CSR)</h2>
         <p className="text-xs">
@@ -68,7 +69,7 @@ function Exercise() {
         </p>
       </div>
       <RouterProvider router={router} />
-    </>
+    </HelmetProvider>
   );
 }
 
